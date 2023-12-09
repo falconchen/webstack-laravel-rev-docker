@@ -10,6 +10,16 @@ services:
       - ./WebStack-Laravel:/var/www/html
       - ./data/db:/db
       - ./data/uploads:/var/www/html/public/uploads
+    environment:
+      - APP_NAME="WebStack Rev"
+      - APP_ENV=local
+      - APP_DEBUG=true      
+      - APP_LOG_LEVEL=debug
+      - APP_URL="https://nav.cellmean.com"
+      - ADMIN_HTTPS="true"
+      - LOGIN_CAPTCHA="false"
+      - DB_CONNECTION=sqlite
+      - DB_DATABASE=/db/webstack.sqlite
 
     env_file:
       - .env      
