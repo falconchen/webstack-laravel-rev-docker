@@ -12,7 +12,8 @@ services:
       - ./data/uploads:/var/www/html/public/uploads
     environment:
       - APP_NAME="WebStack Rev"
-      - APP_ENV=production
+      #- APP_ENV=production
+      - APP_ENV=local
       - APP_DEBUG=false      
       - APP_LOG_LEVEL=debug
       - APP_URL="https://wslr-falconchen.cloud.okteto.net"
