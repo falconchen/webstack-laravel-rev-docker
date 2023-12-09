@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  
+  wsl:
+    image: falconchen/webstack-rev
+    container_name: "wsl_rev"
+    volumes:
+      #本地开发使用
+      - ./WebStack-Laravel:/var/www/html
+      - ./data/db:/db
+      - ./data/uploads:/var/www/html/public/uploads
+
+    env_file:
+      - .env      
+
+    ports:
+      - 20006:80       
+    
+    
