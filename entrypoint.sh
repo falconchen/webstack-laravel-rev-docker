@@ -1,8 +1,8 @@
 #!/bin/sh
 set -eu
 
-#if [ -n "${LOGIN_CAPTCHA}" ]; then
-if [ -n "${LOGIN_CAPTCHA+x}" ]; then
+if [ -n "${LOGIN_CAPTCHA}" ]; then
+#if [ -n "${LOGIN_CAPTCHA+x}" ]; then
     sed -i "/login-captcha/{n;s/'enable.*/'enable' => ${LOGIN_CAPTCHA}/}" config/admin.php
 fi
 cd $WEBSTACK_DIR
