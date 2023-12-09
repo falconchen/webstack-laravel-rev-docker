@@ -2,9 +2,9 @@ version: '3'
 
 services:
   
-  wsl:
+  wslr:
     image: falconchen/webstack-rev
-    container_name: "wsl_rev"
+    container_name: "wslr"
     volumes:
       #本地开发使用
       - ./WebStack-Laravel:/var/www/html

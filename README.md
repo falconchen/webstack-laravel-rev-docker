@@ -11,6 +11,6 @@
 
 ``` bash
 docker build -t falconchen/webstack-rev .
-docker compose exec -it wsl /bin/sh
+docker compose exec -it wslr /bin/sh
 docker compose logs
 ```
