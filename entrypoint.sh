@@ -25,8 +25,8 @@ if [ "$DB_CONNECTION" == "sqlite" ] && [ -n "$DB_DATABASE" ]; then
     if [ ! -s "$DB_DATABASE" ]; then
         echo "Creating SQLite database file: $DB_DATABASE"
         touch "$DB_DATABASE"        
-        php artisan key:generate 
-        php artisan migrate:refresh --seed 
+        php artisan key:generate --force
+        php artisan migrate:refresh --seed --force
     fi
 
     echo "SQLite setup completed."
