@@ -7,7 +7,7 @@ services:
     container_name: "wslr"
     volumes:
       #本地开发使用
-      - ./WebStack-Laravel:/var/www/html
+      # - ./WebStack-Laravel:/var/www/html
       - ./data/db:/db
       - ./data/uploads:/var/www/html/public/uploads
     environment:
