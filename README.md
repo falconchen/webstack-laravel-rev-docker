@@ -1,5 +1,7 @@
 # WebStack Laravel Rev Docker
 
+***部署前先将 `.env.example` 复制成 `.env` ，按照你的需要修改相关参数***
+
 ## 简介
 - demo: <https://wslr-falconchen.cloud.okteto.net/>
 - 本镜像使用sqlite作为数据库，方便备份和迁移， sqlite数据和上传的图片放在data目录，只需备份这个目录即可。
